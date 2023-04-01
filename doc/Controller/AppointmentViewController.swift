@@ -11,7 +11,8 @@ class AppointmentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Mine timer"
+
+        navigationItem.title = "Mine timer"
     }
     
 

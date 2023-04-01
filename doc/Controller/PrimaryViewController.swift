@@ -11,8 +11,8 @@ class PrimaryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Hei, Sigrid"
+        navigationItem.title = "Hei, Sigrid"
+       
     }
     
 

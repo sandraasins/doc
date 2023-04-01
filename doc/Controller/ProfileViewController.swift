@@ -11,7 +11,8 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Min side"
+    
+        navigationItem.title = "Min side"
       
     }
 
