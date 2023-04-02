@@ -9,17 +9,15 @@ import UIKit
 
 class PrescriptionsViewController: UIViewController {
 
-    
-    
-    @IBOutlet weak var myPresctriptionButton: UIButton!
-    @IBOutlet weak var renewMyPrescriptionButton: UIButton!
-    
+    @IBOutlet weak var renewPrescriptionButton: UIButton!
+    @IBOutlet weak var myPrescriptionsButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        myPresctriptionButton.layer.cornerRadius = 20
-        renewMyPrescriptionButton.layer.cornerRadius = 12
+        renewPrescriptionButton.layer.cornerRadius = 12
+        myPrescriptionsButton.layer.cornerRadius = 12
+        
     }
     
 

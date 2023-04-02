@@ -17,18 +17,11 @@ class PrimaryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //navigationItem.title = "Hei, Sigrid"
-        
+      
         makeAppointmentButton.layer.cornerRadius = 12
         renewPrescriptionButton.layer.cornerRadius = 12
         orderCertificateButton.layer.cornerRadius = 12
         contactButton.layer.cornerRadius = 12
-        
-//        makeAppointmentButton.layer.cornerRadius = 25
-//        renewPrescriptionButton.layer.cornerRadius = 25
-//        orderCertificateButton.layer.cornerRadius = 25
-//        contactButton.layer.cornerRadius = 25
-    }
-    
 
+    }
 }

@@ -16,9 +16,13 @@
 		233AEFE629D774C30034ABA0 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AEFE529D774C30034ABA0 /* SplashViewController.swift */; };
 		233AEFEB29D87DEB0034ABA0 /* PrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233AEFEA29D87DEB0034ABA0 /* PrimaryViewController.swift */; };
 		233E633F29D99DBC00F310B3 /* PrescriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E633E29D99DBC00F310B3 /* PrescriptionsViewController.swift */; };
+		233E634129D9D01900F310B3 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E634029D9D01900F310B3 /* ContactViewController.swift */; };
+		233E634529D9DB0A00F310B3 /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233E634429D9DB0A00F310B3 /* ConsultationViewController.swift */; };
 		2354B8AC29D8A64C00669BD2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B8AB29D8A64C00669BD2 /* ProfileViewController.swift */; };
 		2354B8AE29D8A66300669BD2 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B8AD29D8A66300669BD2 /* AppointmentViewController.swift */; };
 		2354B8B029D8ACBD00669BD2 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B8AF29D8ACBD00669BD2 /* BookAppointmentViewController.swift */; };
+		23F6616629DA28A700E6B203 /* BookEConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6616529DA28A700E6B203 /* BookEConsultationViewController.swift */; };
+		23F6616829DA290500E6B203 /* BookUrgentAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6616729DA290500E6B203 /* BookUrgentAppointmentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +37,13 @@
 		233AEFE529D774C30034ABA0 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		233AEFEA29D87DEB0034ABA0 /* PrimaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryViewController.swift; sourceTree = "<group>"; };
 		233E633E29D99DBC00F310B3 /* PrescriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionsViewController.swift; sourceTree = "<group>"; };
+		233E634029D9D01900F310B3 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		233E634429D9DB0A00F310B3 /* ConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
 		2354B8AB29D8A64C00669BD2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2354B8AD29D8A66300669BD2 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 		2354B8AF29D8ACBD00669BD2 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		23F6616529DA28A700E6B203 /* BookEConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEConsultationViewController.swift; sourceTree = "<group>"; };
+		23F6616729DA290500E6B203 /* BookUrgentAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUrgentAppointmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +107,26 @@
 		233AEFE929D774DA0034ABA0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23F6616429DA287400E6B203 /* BookApointment */,
 				233AEFE529D774C30034ABA0 /* SplashViewController.swift */,
 				233AEFEA29D87DEB0034ABA0 /* PrimaryViewController.swift */,
 				2354B8AB29D8A64C00669BD2 /* ProfileViewController.swift */,
 				2354B8AD29D8A66300669BD2 /* AppointmentViewController.swift */,
-				2354B8AF29D8ACBD00669BD2 /* BookAppointmentViewController.swift */,
 				233E633E29D99DBC00F310B3 /* PrescriptionsViewController.swift */,
+				233E634029D9D01900F310B3 /* ContactViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		23F6616429DA287400E6B203 /* BookApointment */ = {
+			isa = PBXGroup;
+			children = (
+				233E634429D9DB0A00F310B3 /* ConsultationViewController.swift */,
+				2354B8AF29D8ACBD00669BD2 /* BookAppointmentViewController.swift */,
+				23F6616529DA28A700E6B203 /* BookEConsultationViewController.swift */,
+				23F6616729DA290500E6B203 /* BookUrgentAppointmentViewController.swift */,
+			);
+			path = BookApointment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +206,13 @@
 				233AEFCF29D758690034ABA0 /* AppDelegate.swift in Sources */,
 				233AEFD929D758690034ABA0 /* doc.xcdatamodeld in Sources */,
 				233AEFD129D758690034ABA0 /* SceneDelegate.swift in Sources */,
+				23F6616629DA28A700E6B203 /* BookEConsultationViewController.swift in Sources */,
 				233AEFEB29D87DEB0034ABA0 /* PrimaryViewController.swift in Sources */,
 				233AEFE629D774C30034ABA0 /* SplashViewController.swift in Sources */,
+				233E634529D9DB0A00F310B3 /* ConsultationViewController.swift in Sources */,
 				2354B8B029D8ACBD00669BD2 /* BookAppointmentViewController.swift in Sources */,
+				23F6616829DA290500E6B203 /* BookUrgentAppointmentViewController.swift in Sources */,
+				233E634129D9D01900F310B3 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

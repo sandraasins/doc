@@ -9,10 +9,20 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
+    @IBOutlet weak var logInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        logInButton.layer.cornerRadius = 12
+        
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+//            self.performSegue(withIdentifier: "PrimaryViewController", sender: nil)
+//        }
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.performSegue(withIdentifier: "PrimaryView", sender: nil)
+        }
     }
     
 

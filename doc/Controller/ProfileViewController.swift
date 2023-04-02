@@ -17,8 +17,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        navigationItem.title = "Min side"
-       
+        //navigationItem.title = "Min side"
         messagesButton.layer.cornerRadius = 12
         prescriptionsButton.layer.cornerRadius = 12
         appointmentsButton.layer.cornerRadius = 12
