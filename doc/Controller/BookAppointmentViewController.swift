@@ -19,7 +19,10 @@ class BookAppointmentViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Bestill time"
         
-        bookApointmentImageView.image = UIImage(named: "pablita-doctor-in-a-phone-with-pills")
+        consultationButton.layer.cornerRadius = 12
+        eConsultationButton.layer.cornerRadius = 12
+        urgentConsultationButton.layer.cornerRadius = 12
+        
     }
 
 

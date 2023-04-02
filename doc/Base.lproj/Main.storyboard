@@ -46,14 +46,141 @@
                     <view key="view" contentMode="scaleToFill" id="Og4-I1-h89">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hei " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv7-dj-Etz">
+                                <rect key="frame" x="25" y="91" width="104" height="20.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.333333333333329" id="Xq6-Po-ngN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hva kan vi hjelpe deg med? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1s-Ff-QPz">
+                                <rect key="frame" x="25" y="112.33333333333334" width="228" height="69.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pablita-doctor-in-a-phone-with-pills" translatesAutoresizingMaskIntoConstraints="NO" id="VZx-Fb-KA5">
+                                <rect key="frame" x="25" y="190" width="340" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="yLk-rR-u4W"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-CH-EfF">
+                                <rect key="frame" x="25" y="472" width="340" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quz-Kc-hb8">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="XhW-dj-b4X"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bestill time">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="dbI-rV-gm6" kind="show" id="ial-XK-eGC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jir-Gl-abS">
+                                        <rect key="frame" x="0.0" y="65" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="iPU-2a-8pw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forny resept">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mck-Js-cgF">
+                                        <rect key="frame" x="0.0" y="130" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="DD8-qJ-Oyw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Bestill attest">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-TN-dKh">
+                                        <rect key="frame" x="0.0" y="195" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="RgF-e2-7lO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Kontakt">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="258" id="6nd-Dg-ZnW"/>
+                                    <constraint firstAttribute="width" constant="340" id="YrX-i2-wJl"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="358" id="ZIV-kx-5VI"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="340" id="ysV-3Z-8Ao"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wYJ-9a-uNK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D1s-Ff-QPz" firstAttribute="top" secondItem="mv7-dj-Etz" secondAttribute="bottom" constant="1" id="3bM-yo-f1M"/>
+                            <constraint firstItem="D1s-Ff-QPz" firstAttribute="leading" secondItem="wYJ-9a-uNK" secondAttribute="leading" constant="25" id="3om-dm-qpy"/>
+                            <constraint firstItem="gSc-CH-EfF" firstAttribute="leading" secondItem="wYJ-9a-uNK" secondAttribute="leading" constant="25" id="63U-iM-8EA"/>
+                            <constraint firstItem="VZx-Fb-KA5" firstAttribute="trailing" secondItem="gSc-CH-EfF" secondAttribute="trailing" id="6Wo-8Y-L21"/>
+                            <constraint firstItem="VZx-Fb-KA5" firstAttribute="leading" secondItem="gSc-CH-EfF" secondAttribute="leading" id="6gr-Zw-aUt"/>
+                            <constraint firstItem="wYJ-9a-uNK" firstAttribute="trailing" secondItem="gSc-CH-EfF" secondAttribute="trailing" constant="25" id="9cI-SM-pv5"/>
+                            <constraint firstItem="D1s-Ff-QPz" firstAttribute="top" secondItem="mv7-dj-Etz" secondAttribute="bottom" constant="0.99999999999998579" id="Fyw-p3-5a3"/>
+                            <constraint firstItem="VZx-Fb-KA5" firstAttribute="top" secondItem="D1s-Ff-QPz" secondAttribute="bottom" constant="8.3333333333333144" id="J0k-Iu-YzI"/>
+                            <constraint firstItem="VZx-Fb-KA5" firstAttribute="leading" secondItem="D1s-Ff-QPz" secondAttribute="leading" id="Pnm-vx-sUW"/>
+                            <constraint firstItem="wYJ-9a-uNK" firstAttribute="trailing" secondItem="mv7-dj-Etz" secondAttribute="trailing" constant="261" id="VHI-Dz-0Kf"/>
+                            <constraint firstItem="mv7-dj-Etz" firstAttribute="top" secondItem="wYJ-9a-uNK" secondAttribute="top" id="YB0-PY-zri"/>
+                            <constraint firstItem="wYJ-9a-uNK" firstAttribute="bottom" secondItem="gSc-CH-EfF" secondAttribute="bottom" constant="39" id="bHe-bJ-2jt"/>
+                            <constraint firstItem="wYJ-9a-uNK" firstAttribute="bottom" secondItem="gSc-CH-EfF" secondAttribute="bottom" constant="39" id="d1D-2e-lmg"/>
+                            <constraint firstItem="gSc-CH-EfF" firstAttribute="top" secondItem="VZx-Fb-KA5" secondAttribute="bottom" constant="12" id="rmX-EZ-BTf"/>
+                            <constraint firstItem="wYJ-9a-uNK" firstAttribute="trailing" secondItem="gSc-CH-EfF" secondAttribute="trailing" constant="25" id="spp-Os-XdO"/>
+                            <constraint firstItem="VZx-Fb-KA5" firstAttribute="leading" secondItem="mv7-dj-Etz" secondAttribute="leading" id="w43-qh-PdP"/>
+                            <constraint firstItem="gSc-CH-EfF" firstAttribute="top" secondItem="VZx-Fb-KA5" secondAttribute="bottom" constant="12" id="x7F-A0-xMN"/>
+                            <constraint firstItem="wYJ-9a-uNK" firstAttribute="trailing" secondItem="D1s-Ff-QPz" secondAttribute="trailing" constant="137" id="xKb-2F-6fk"/>
+                            <constraint firstItem="gSc-CH-EfF" firstAttribute="leading" secondItem="wYJ-9a-uNK" secondAttribute="leading" constant="25" id="zGV-Bz-J1A"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ckc-Yz-g0I"/>
+                    <connections>
+                        <outlet property="contactButton" destination="Jk4-TN-dKh" id="psY-47-hDf"/>
+                        <outlet property="makeAppointmentButton" destination="quz-Kc-hb8" id="69N-Es-99C"/>
+                        <outlet property="orderCertificateButton" destination="Mck-Js-cgF" id="W6V-Ty-SVg"/>
+                        <outlet property="renewPrescriptionButton" destination="jir-Gl-abS" id="tvd-ws-FK8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4f-9R-fO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="590.76923076923072" y="606.39810426540282"/>
+        </scene>
+        <!--Mine resepter-->
+        <scene sceneID="P9z-12-Yn5">
+            <objects>
+                <viewController id="oH9-lf-4uA" customClass="PrescriptionsViewController" customModule="doc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Nm-cy-yo5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6HO-RG-Q3f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mine resepter" id="PI6-C4-5qu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rp2-xg-675" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590.76923076923072" y="1308.7677725118483"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0JZ-3r-Fgj">
@@ -63,7 +190,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="58Q-kU-Lmd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.33407270909999998" green="0.22674342989999999" blue="0.95299452539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="SSI-UO-xrX" kind="relationship" relationship="viewControllers" id="U8j-o7-9xi"/>
@@ -82,8 +210,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SSI-UO-xrX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Hjem" image="house" catalog="system" selectedImage="house.fill" id="HiB-B7-dq4"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="cd9-Yc-epP">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cd9-Yc-epP">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -118,26 +246,14 @@
                     <view key="view" contentMode="scaleToFill" id="bbb-GR-B97">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yd1-zc-0p4">
-                                <rect key="frame" x="16" y="143" width="358" height="618"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6tC-VF-pij"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6tC-VF-pij" firstAttribute="trailing" secondItem="Yd1-zc-0p4" secondAttribute="trailing" constant="16" id="5Ok-Eb-199"/>
-                            <constraint firstItem="Yd1-zc-0p4" firstAttribute="top" secondItem="6tC-VF-pij" secondAttribute="top" id="Ibq-QY-3tJ"/>
-                            <constraint firstItem="Yd1-zc-0p4" firstAttribute="bottom" secondItem="6tC-VF-pij" secondAttribute="bottom" id="Uk7-kz-xAz"/>
-                            <constraint firstItem="Yd1-zc-0p4" firstAttribute="leading" secondItem="6tC-VF-pij" secondAttribute="leading" constant="16" id="Z2B-0Q-JwV"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CHC-bU-KcM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VI-YL-xHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3065" y="620"/>
+            <point key="canvasLocation" x="3063.0769230769229" y="619.19431279620846"/>
         </scene>
         <!--Mine timer-->
         <scene sceneID="IpE-rN-u4u">
@@ -145,8 +261,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="No0-uY-u9r" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Mine timer" image="calendar" catalog="system" selectedImage="calendar.badge.clock" id="PpF-OR-xbX"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="HDg-LK-jxb">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HDg-LK-jxb">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -164,8 +280,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pbP-bx-Hbw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="MIn side" image="person" catalog="system" selectedImage="person.fill" id="fdD-7K-JEw"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MMP-Bj-hzK">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MMP-Bj-hzK">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -185,72 +301,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f6j-1W-VYr">
-                                <rect key="frame" x="16" y="179" width="358" height="222.33333333333337"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pablita-doctor-in-a-phone-with-pills" translatesAutoresizingMaskIntoConstraints="NO" id="f6j-1W-VYr">
+                                <rect key="frame" x="27" y="105" width="336" height="270"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velg ønsket type konsultasjon med din lege. Avbestilling av en timem må gjøres senest 24 timer i forveien. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5A-pA-mPB">
-                                <rect key="frame" x="21" y="429.33333333333331" width="348" height="64.666666666666686"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Trp-VL-Xwh">
+                                <rect key="frame" x="25" y="468" width="340" height="185"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ1-w5-hx1">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="m4l-le-xHv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Konsultasjon ">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67F-2n-MxY">
+                                        <rect key="frame" x="0.0" y="65" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="FWJ-1G-KzW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="E-konsultasjon">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HI-EA-4ih">
+                                        <rect key="frame" x="0.0" y="130" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="Lum-8E-Qgp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hastetime" titleAlignment="leading">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="3sw-ar-jpE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="4Qe-N0-EvF"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Velg ønsket type konsultasjon med din lege. Avbestilling må gjøres senest 24 timer i forveien. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5A-pA-mPB">
+                                <rect key="frame" x="27" y="383" width="336" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="31t-8e-BhD"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="340" id="Gp0-Dz-dnN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="336" id="KlF-7I-Cz0"/>
+                                    <constraint firstAttribute="width" constant="336" id="Na4-iG-H7t"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Wpt-5v-zOM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ1-w5-hx1">
-                                <rect key="frame" x="16" y="513" width="358" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="m4l-le-xHv"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Konsultasjon ">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
-                                    <color key="baseBackgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67F-2n-MxY">
-                                <rect key="frame" x="16" y="579" width="358" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="FWJ-1G-KzW"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="E-konsultasjon">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
-                                    <color key="baseBackgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HI-EA-4ih">
-                                <rect key="frame" x="16" y="645" width="358" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="Lum-8E-Qgp"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Hastetime" titleAlignment="leading">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
-                                    <color key="baseBackgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WfX-Zk-KOC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="bottom" secondItem="4HI-EA-4ih" secondAttribute="bottom" constant="61" id="2b1-KZ-r2h"/>
-                            <constraint firstItem="67F-2n-MxY" firstAttribute="top" secondItem="SZ1-w5-hx1" secondAttribute="bottom" constant="11" id="3IZ-qd-ThO"/>
-                            <constraint firstItem="f6j-1W-VYr" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="16" id="E0O-8L-5Ti"/>
-                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="f6j-1W-VYr" secondAttribute="trailing" constant="16" id="Epn-Fg-bl0"/>
-                            <constraint firstItem="H5A-pA-mPB" firstAttribute="top" secondItem="f6j-1W-VYr" secondAttribute="bottom" constant="27.999999999999886" id="Gge-81-8nD"/>
-                            <constraint firstItem="SZ1-w5-hx1" firstAttribute="top" secondItem="H5A-pA-mPB" secondAttribute="bottom" constant="19" id="HQ1-ss-Bqv"/>
-                            <constraint firstItem="4HI-EA-4ih" firstAttribute="top" secondItem="67F-2n-MxY" secondAttribute="bottom" constant="11" id="Jiz-cp-5M9"/>
-                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="67F-2n-MxY" secondAttribute="trailing" constant="16" id="LLC-UX-pmR"/>
-                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="4HI-EA-4ih" secondAttribute="trailing" constant="16" id="PVW-nL-4Pt"/>
-                            <constraint firstItem="f6j-1W-VYr" firstAttribute="top" secondItem="WfX-Zk-KOC" secondAttribute="top" constant="36" id="S8s-mX-eOA"/>
-                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="H5A-pA-mPB" secondAttribute="trailing" constant="21" id="T3c-D3-xeV"/>
-                            <constraint firstItem="SZ1-w5-hx1" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="16" id="V6n-Lu-yqn"/>
-                            <constraint firstItem="67F-2n-MxY" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="16" id="WlL-56-GN2"/>
-                            <constraint firstItem="SZ1-w5-hx1" firstAttribute="top" secondItem="H5A-pA-mPB" secondAttribute="bottom" constant="19" id="XJx-ne-AbE"/>
-                            <constraint firstItem="4HI-EA-4ih" firstAttribute="top" secondItem="67F-2n-MxY" secondAttribute="bottom" constant="11" id="Z8G-if-Lxb"/>
-                            <constraint firstItem="H5A-pA-mPB" firstAttribute="top" secondItem="f6j-1W-VYr" secondAttribute="bottom" constant="27.999999999999886" id="lW1-0s-VT4"/>
-                            <constraint firstItem="67F-2n-MxY" firstAttribute="top" secondItem="SZ1-w5-hx1" secondAttribute="bottom" constant="11" id="njh-9J-Sxj"/>
-                            <constraint firstItem="4HI-EA-4ih" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="16" id="oLY-xR-Lpe"/>
-                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="SZ1-w5-hx1" secondAttribute="trailing" constant="16" id="teU-3x-9hw"/>
-                            <constraint firstItem="H5A-pA-mPB" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="21" id="w7H-1m-RvY"/>
+                            <constraint firstItem="H5A-pA-mPB" firstAttribute="centerX" secondItem="f6j-1W-VYr" secondAttribute="centerX" id="BFt-PT-gj9"/>
+                            <constraint firstItem="H5A-pA-mPB" firstAttribute="top" secondItem="f6j-1W-VYr" secondAttribute="bottom" constant="8" id="HAK-RK-cwQ"/>
+                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="H5A-pA-mPB" secondAttribute="trailing" constant="27" id="Nk3-yu-nhN"/>
+                            <constraint firstItem="Trp-VL-Xwh" firstAttribute="top" secondItem="H5A-pA-mPB" secondAttribute="bottom" constant="20" id="QtC-Cd-RFN"/>
+                            <constraint firstItem="H5A-pA-mPB" firstAttribute="centerX" secondItem="Trp-VL-Xwh" secondAttribute="centerX" id="WsQ-VS-TBc"/>
+                            <constraint firstItem="WfX-Zk-KOC" firstAttribute="trailing" secondItem="Trp-VL-Xwh" secondAttribute="trailing" constant="25" id="ZZ2-wK-vPh"/>
+                            <constraint firstItem="f6j-1W-VYr" firstAttribute="leading" secondItem="H5A-pA-mPB" secondAttribute="leading" id="gt3-Em-4sV"/>
+                            <constraint firstItem="H5A-pA-mPB" firstAttribute="centerX" secondItem="yAM-z7-guu" secondAttribute="centerX" id="oML-Kd-Ru3"/>
+                            <constraint firstItem="Trp-VL-Xwh" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="25" id="t3B-a6-8RO"/>
+                            <constraint firstItem="H5A-pA-mPB" firstAttribute="top" secondItem="yAM-z7-guu" secondAttribute="top" constant="383" id="wzJ-QV-vdw"/>
+                            <constraint firstItem="H5A-pA-mPB" firstAttribute="leading" secondItem="WfX-Zk-KOC" secondAttribute="leading" constant="27" id="xTQ-Ed-mlh"/>
+                            <constraint firstItem="f6j-1W-VYr" firstAttribute="top" secondItem="WfX-Zk-KOC" secondAttribute="top" constant="14" id="yfa-88-gU6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HEO-v1-9sQ"/>
@@ -271,8 +398,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RF8-Pm-EKT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bestill time" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="fA3-x4-Qby"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Uy6-QW-cb2">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uy6-QW-cb2">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -285,11 +412,15 @@
             <point key="canvasLocation" x="2248" y="-142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ial-XK-eGC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="pablita-doctor-in-a-phone-with-pills" width="256" height="144"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
