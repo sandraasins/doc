@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hei " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv7-dj-Etz">
-                                <rect key="frame" x="25" y="47" width="104" height="20.333333333333329"/>
+                                <rect key="frame" x="25" y="91" width="104" height="20.333333333333329"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.333333333333329" id="Xq6-Po-ngN"/>
                                 </constraints>
@@ -70,19 +70,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hva kan vi hjelpe deg med? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1s-Ff-QPz">
-                                <rect key="frame" x="25" y="68.333333333333329" width="228" height="162.33333333333337"/>
+                                <rect key="frame" x="25" y="112.33333333333334" width="228" height="69.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pablita-doctor-in-a-phone-with-pills (1)" translatesAutoresizingMaskIntoConstraints="NO" id="VZx-Fb-KA5">
-                                <rect key="frame" x="25" y="239" width="340" height="270"/>
+                                <rect key="frame" x="25" y="190" width="340" height="270"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="270" id="yLk-rR-u4W"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-CH-EfF">
-                                <rect key="frame" x="25" y="521" width="340" height="250"/>
+                                <rect key="frame" x="25" y="472" width="340" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quz-Kc-hb8">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
@@ -111,7 +111,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="oH9-lf-4uA" kind="show" id="aaC-a9-zWR"/>
+                                            <segue destination="oH9-lf-4uA" kind="show" id="JkJ-Yy-hVM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mck-Js-cgF">
@@ -194,80 +194,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpm-x1-1rQ">
-                                <rect key="frame" x="27" y="460" width="336" height="109"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="340" id="4yK-xd-OSd"/>
-                                    <constraint firstAttribute="width" constant="336" id="61R-rb-JMr"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="L3C-Lo-urO"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="336" id="aya-rj-1O1"/>
-                                    <constraint firstAttribute="height" constant="109" id="bi3-fA-0zc"/>
-                                </constraints>
-                                <string key="text">Fornyelse av resept gjelder kun faste legemidler. Har du behov for resept på et nytt legemiddel må du  bestille time med din lege. E-resepten kan hentes ut på valgfri apotek.</string>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TOV-cu-gQ2">
-                                <rect key="frame" x="25" y="594" width="340" height="120"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUf-k1-jO9">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="err-Gk-Rfn">
-                                        <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
-                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pablita-924" translatesAutoresizingMaskIntoConstraints="NO" id="PLk-4d-JlC">
+                                        <rect key="frame" x="69" y="29" width="176" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="Pjp-Ze-EZz"/>
+                                            <constraint firstAttribute="width" constant="176" id="itU-Bp-iYR"/>
+                                            <constraint firstAttribute="height" constant="200" id="wa7-Cq-wXp"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forny resept">
-                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6L-O3-kTL">
-                                        <rect key="frame" x="0.0" y="65" width="340" height="55"/>
-                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpm-x1-1rQ">
+                                        <rect key="frame" x="27" y="235" width="336" height="109"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="Y2u-Dp-ECf"/>
+                                            <constraint firstAttribute="width" constant="336" id="6LG-Wf-6RJ"/>
+                                            <constraint firstAttribute="height" constant="109" id="w8f-R7-85e"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Resepter">
-                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
+                                        <string key="text">Fornyelse av resept gjelder kun faste legemidler. For resept på et nytt legemiddel må du  bestille time med din lege. E-resepten kan hentes ut på valgfri apotek.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6us-Dp-HKT">
+                                        <rect key="frame" x="27" y="361" width="340" height="361"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TOV-cu-gQ2">
+                                                <rect key="frame" x="0.0" y="0.0" width="340" height="321"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="err-Gk-Rfn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
+                                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="55" id="Sc5-nk-6DA"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Mine faste legemidler">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mrF-AI-OAW">
+                                                        <rect key="frame" x="0.0" y="55" width="340" height="266"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </tableView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="340" id="cAJ-ee-fLN"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="ulh-uH-khV"/>
+                                                    <constraint firstAttribute="height" constant="321" id="z3h-OJ-Wp2"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8dS-7T-KCy">
+                                                <rect key="frame" x="0.0" y="337" width="340" height="24"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkH-DA-oW0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="AQT-wM-xPL"/>
+                                                            <constraint firstAttribute="width" constant="24" id="xKZ-mc-Dr6"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
+                                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send meg bekreftelse når resepten er klar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDq-qO-cMK">
+                                                        <rect key="frame" x="28" y="0.0" width="312" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Lne-6h-uzg"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="336" id="luE-gq-6Jp"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="Byj-ZS-L2q"/>
-                                    <constraint firstAttribute="width" constant="340" id="eQa-em-nFc"/>
+                                    <constraint firstItem="cpm-x1-1rQ" firstAttribute="leading" secondItem="dg4-gB-QEe" secondAttribute="leading" constant="27" id="8Au-aY-tDD"/>
+                                    <constraint firstAttribute="bottom" secondItem="6us-Dp-HKT" secondAttribute="bottom" constant="34" id="9bi-kI-PcA"/>
+                                    <constraint firstItem="PLk-4d-JlC" firstAttribute="leading" secondItem="dg4-gB-QEe" secondAttribute="leading" constant="69" id="Hi3-mq-hjE"/>
+                                    <constraint firstAttribute="trailing" secondItem="6us-Dp-HKT" secondAttribute="trailing" constant="23" id="IUB-dC-yXd"/>
+                                    <constraint firstItem="dg4-gB-QEe" firstAttribute="trailing" secondItem="cpm-x1-1rQ" secondAttribute="trailing" constant="27" id="N4S-hl-nqi"/>
+                                    <constraint firstItem="PLk-4d-JlC" firstAttribute="top" secondItem="dg4-gB-QEe" secondAttribute="top" constant="29" id="R40-xC-jff"/>
+                                    <constraint firstItem="cpm-x1-1rQ" firstAttribute="top" secondItem="PLk-4d-JlC" secondAttribute="bottom" constant="6" id="aLl-3B-uN5"/>
+                                    <constraint firstItem="dg4-gB-QEe" firstAttribute="trailing" secondItem="PLk-4d-JlC" secondAttribute="trailing" constant="145" id="ccw-xk-dCB"/>
+                                    <constraint firstItem="cpm-x1-1rQ" firstAttribute="top" secondItem="PLk-4d-JlC" secondAttribute="bottom" constant="6" id="tEz-OH-seE"/>
+                                    <constraint firstItem="cpm-x1-1rQ" firstAttribute="leading" secondItem="6us-Dp-HKT" secondAttribute="leading" id="uPp-XS-HUq"/>
+                                    <constraint firstItem="6us-Dp-HKT" firstAttribute="top" secondItem="cpm-x1-1rQ" secondAttribute="bottom" constant="17" id="v6t-gK-pgy"/>
                                 </constraints>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pablita-924" translatesAutoresizingMaskIntoConstraints="NO" id="PLk-4d-JlC">
-                                <rect key="frame" x="25" y="47" width="336" height="370"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
-                            </imageView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ylR-oY-gyB"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="dg4-gB-QEe"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6HO-RG-Q3f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PLk-4d-JlC" firstAttribute="centerX" secondItem="1Nm-cy-yo5" secondAttribute="centerX" constant="-2" id="GOm-6h-mcf"/>
-                            <constraint firstItem="cpm-x1-1rQ" firstAttribute="top" secondItem="PLk-4d-JlC" secondAttribute="bottom" constant="43" id="Knf-Of-Y1I"/>
-                            <constraint firstItem="cpm-x1-1rQ" firstAttribute="centerX" secondItem="PLk-4d-JlC" secondAttribute="centerX" constant="2" id="O8I-Cl-imj"/>
-                            <constraint firstItem="TOV-cu-gQ2" firstAttribute="top" secondItem="cpm-x1-1rQ" secondAttribute="bottom" constant="25" id="g4c-X9-Hac"/>
-                            <constraint firstItem="PLk-4d-JlC" firstAttribute="leading" secondItem="cpm-x1-1rQ" secondAttribute="leading" constant="-2" id="gcj-YN-rn1"/>
-                            <constraint firstItem="cpm-x1-1rQ" firstAttribute="centerX" secondItem="TOV-cu-gQ2" secondAttribute="centerX" id="x76-q5-trg"/>
-                            <constraint firstItem="PLk-4d-JlC" firstAttribute="top" secondItem="6HO-RG-Q3f" secondAttribute="top" id="yxp-TG-7zM"/>
-                            <constraint firstItem="6HO-RG-Q3f" firstAttribute="bottom" secondItem="TOV-cu-gQ2" secondAttribute="bottom" constant="96" id="zaK-Z1-IQo"/>
+                            <constraint firstItem="KUf-k1-jO9" firstAttribute="leading" secondItem="1Nm-cy-yo5" secondAttribute="leading" id="HGG-7j-DMQ"/>
+                            <constraint firstItem="KUf-k1-jO9" firstAttribute="top" secondItem="6HO-RG-Q3f" secondAttribute="top" id="Rgd-GE-4kd"/>
+                            <constraint firstItem="6HO-RG-Q3f" firstAttribute="bottom" secondItem="KUf-k1-jO9" secondAttribute="bottom" id="nQi-Tl-sX5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Resepter" id="PI6-C4-5qu"/>
                     <connections>
-                        <outlet property="myPrescriptionsButton" destination="t6L-O3-kTL" id="LzW-lP-bW1"/>
+                        <outlet property="prescriptionTableView" destination="mrF-AI-OAW" id="vwA-sn-fXS"/>
                         <outlet property="renewPrescriptionButton" destination="err-Gk-Rfn" id="gni-BO-oky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rp2-xg-675" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1308" y="1359"/>
+            <point key="canvasLocation" x="-1309.2307692307693" y="1358.5308056872038"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="UcA-DE-Ief">
@@ -278,7 +318,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tdB-GG-DT9">
-                                <rect key="frame" x="25" y="140.00000000000003" width="340" height="327.66666666666674"/>
+                                <rect key="frame" x="25" y="91" width="340" height="327.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Kontakt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA7-tt-rVe">
                                         <rect key="frame" x="0.0" y="0.0" width="109.33333333333333" height="37"/>
@@ -302,7 +342,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epost:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY8-Px-bAw">
-                                        <rect key="frame" x="0.0" y="125.66666666666667" width="49.666666666666664" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="125.66666666666664" width="49.666666666666664" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -343,7 +383,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-xb-5T0">
-                                <rect key="frame" x="25" y="530" width="340" height="200"/>
+                                <rect key="frame" x="25" y="481" width="340" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefontider" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRW-fX-kB6">
                                         <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="37"/>
@@ -416,13 +456,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timebestilling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xa-Ix-GrD">
-                                <rect key="frame" x="25" y="139.33333333333334" width="198" height="37"/>
+                                <rect key="frame" x="25" y="90.333333333333329" width="198" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-Sc-ykG">
-                                <rect key="frame" x="25" y="192.33333333333334" width="340" height="101.66666666666666"/>
+                                <rect key="frame" x="25" y="143.33333333333334" width="340" height="101.66666666666666"/>
                                 <string key="text">Velg ønsket dato og tidspunkt for konsultasjon med din lege. Ønsker du å bestille en dobbeltime må du ringe inn til legekontoret. Avbestilling av timen må skje senest 24 timer i forveien. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -459,14 +499,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bya-Kp-dGs">
-                                <rect key="frame" x="25" y="185" width="340" height="101.66666666666669"/>
+                                <rect key="frame" x="25" y="136" width="340" height="101.66666666666669"/>
                                 <string key="text">Velg ønsket dato og tidspunkt for konsultasjon med din lege. Ønsker du å bestille en dobbeltime må du ringe inn til legekontoret. Avbestilling av timen må skje senest 24 timer i forveien. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Konsultasjon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWi-aW-ter">
-                                <rect key="frame" x="25" y="47" width="214" height="37"/>
+                                <rect key="frame" x="25" y="91" width="214" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -500,13 +540,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ved behov for hastetime anbefales det å ringe legekontoret. Ved behov for akutt medisinsk hjelp ring 113!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zar-m4-evg">
-                                <rect key="frame" x="25" y="193" width="340" height="61"/>
+                                <rect key="frame" x="25" y="144" width="340" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hastetime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUs-HQ-X7d">
-                                <rect key="frame" x="25" y="47" width="145" height="37"/>
+                                <rect key="frame" x="25" y="91" width="145" height="37"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -711,7 +751,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor" translatesAutoresizingMaskIntoConstraints="NO" id="f6j-1W-VYr">
-                                <rect key="frame" x="27" y="61" width="336" height="314"/>
+                                <rect key="frame" x="27" y="105" width="336" height="270"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Trp-VL-Xwh">
                                 <rect key="frame" x="25" y="468" width="340" height="185"/>
@@ -868,10 +908,93 @@
             </objects>
             <point key="canvasLocation" x="3715" y="-125"/>
         </scene>
+        <!--Resepter-->
+        <scene sceneID="KPZ-mA-vQh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="kRB-es-KdY" customClass="PrescriptionsViewController" customModule="doc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1SF-R1-iiJ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0c-Lh-YLy">
+                                <rect key="frame" x="25" y="342" width="336" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="4vN-d9-F6b"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="336" id="6El-Iu-lEs"/>
+                                    <constraint firstAttribute="height" constant="109" id="eap-OG-yg3"/>
+                                    <constraint firstAttribute="width" constant="336" id="klP-69-BA2"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="340" id="uvV-Rt-2X9"/>
+                                </constraints>
+                                <string key="text">Fornyelse av resept gjelder kun faste legemidler. Har du behov for resept på et nytt legemiddel må du  bestille time med din lege. E-resepten kan hentes ut på valgfri apotek.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jYw-mo-LfS">
+                                <rect key="frame" x="25" y="468" width="340" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-29-oeR">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="jSv-je-cVl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forny resept">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4Y-1n-OUb">
+                                        <rect key="frame" x="0.0" y="65" width="340" height="55"/>
+                                        <color key="backgroundColor" red="0.54900997880000002" green="0.68869644399999996" blue="0.97650331260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="qRE-Qg-pIR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Resepter">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="8sR-ew-IOo"/>
+                                    <constraint firstAttribute="width" constant="340" id="Hza-B9-Tlx"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pablita-924" translatesAutoresizingMaskIntoConstraints="NO" id="svB-wG-Kd0">
+                                <rect key="frame" x="76" y="119" width="176" height="193"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VxX-8s-5sZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VxX-8s-5sZ" firstAttribute="bottom" secondItem="jYw-mo-LfS" secondAttribute="bottom" constant="96" id="5c0-44-cK2"/>
+                            <constraint firstItem="svB-wG-Kd0" firstAttribute="top" secondItem="VxX-8s-5sZ" secondAttribute="top" id="6wM-Bn-NN6"/>
+                            <constraint firstItem="o0c-Lh-YLy" firstAttribute="centerX" secondItem="jYw-mo-LfS" secondAttribute="centerX" id="Fb6-8e-JiS"/>
+                            <constraint firstItem="o0c-Lh-YLy" firstAttribute="top" secondItem="svB-wG-Kd0" secondAttribute="bottom" constant="43" id="G6v-b0-T78"/>
+                            <constraint firstItem="svB-wG-Kd0" firstAttribute="centerX" secondItem="1SF-R1-iiJ" secondAttribute="centerX" constant="-2" id="OdV-uu-wVr"/>
+                            <constraint firstItem="svB-wG-Kd0" firstAttribute="leading" secondItem="o0c-Lh-YLy" secondAttribute="leading" constant="-2" id="fus-ca-6df"/>
+                            <constraint firstItem="jYw-mo-LfS" firstAttribute="top" secondItem="o0c-Lh-YLy" secondAttribute="bottom" constant="25" id="hGj-Pc-WYb"/>
+                            <constraint firstItem="o0c-Lh-YLy" firstAttribute="centerX" secondItem="svB-wG-Kd0" secondAttribute="centerX" constant="2" id="qaF-Kl-wL1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resepter" id="gXf-qa-b2y"/>
+                    <connections>
+                        <outlet property="myPrescriptionsButton" destination="G4Y-1n-OUb" id="Qy2-BE-Rox"/>
+                        <outlet property="renewPrescriptionButton" destination="LGB-29-oeR" id="Ged-i6-k7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO0-Rk-n9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1980" y="1359"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xLG-fb-vR9"/>
-        <segue reference="zpZ-0g-9BK"/>
+        <segue reference="WSe-0E-gUz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Splash" width="1024" height="1024"/>
@@ -886,6 +1009,10 @@
         <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

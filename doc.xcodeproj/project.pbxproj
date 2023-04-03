@@ -21,6 +21,8 @@
 		2354B8AC29D8A64C00669BD2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B8AB29D8A64C00669BD2 /* ProfileViewController.swift */; };
 		2354B8AE29D8A66300669BD2 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B8AD29D8A66300669BD2 /* AppointmentViewController.swift */; };
 		2354B8B029D8ACBD00669BD2 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354B8AF29D8ACBD00669BD2 /* BookAppointmentViewController.swift */; };
+		23D7E8FA29DB475B0085FD6C /* PrescritopnsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D7E8F829DB475B0085FD6C /* PrescritopnsTableViewCell.swift */; };
+		23D7E8FB29DB475B0085FD6C /* PrescritopnsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D7E8F929DB475B0085FD6C /* PrescritopnsTableViewCell.xib */; };
 		23F6616629DA28A700E6B203 /* BookEConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6616529DA28A700E6B203 /* BookEConsultationViewController.swift */; };
 		23F6616829DA290500E6B203 /* BookUrgentAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F6616729DA290500E6B203 /* BookUrgentAppointmentViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		2354B8AB29D8A64C00669BD2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2354B8AD29D8A66300669BD2 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 		2354B8AF29D8ACBD00669BD2 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		23D7E8F829DB475B0085FD6C /* PrescritopnsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescritopnsTableViewCell.swift; sourceTree = "<group>"; };
+		23D7E8F929DB475B0085FD6C /* PrescritopnsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrescritopnsTableViewCell.xib; sourceTree = "<group>"; };
 		23F6616529DA28A700E6B203 /* BookEConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEConsultationViewController.swift; sourceTree = "<group>"; };
 		23F6616729DA290500E6B203 /* BookUrgentAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUrgentAppointmentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +104,8 @@
 		233AEFE829D774D30034ABA0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23D7E8F829DB475B0085FD6C /* PrescritopnsTableViewCell.swift */,
+				23D7E8F929DB475B0085FD6C /* PrescritopnsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				233AEFDE29D7586B0034ABA0 /* LaunchScreen.storyboard in Resources */,
+				23D7E8FB29DB475B0085FD6C /* PrescritopnsTableViewCell.xib in Resources */,
 				233AEFDB29D7586B0034ABA0 /* Assets.xcassets in Resources */,
 				233AEFD629D758690034ABA0 /* Main.storyboard in Resources */,
 			);
@@ -207,6 +214,7 @@
 				233AEFD929D758690034ABA0 /* doc.xcdatamodeld in Sources */,
 				233AEFD129D758690034ABA0 /* SceneDelegate.swift in Sources */,
 				23F6616629DA28A700E6B203 /* BookEConsultationViewController.swift in Sources */,
+				23D7E8FA29DB475B0085FD6C /* PrescritopnsTableViewCell.swift in Sources */,
 				233AEFEB29D87DEB0034ABA0 /* PrimaryViewController.swift in Sources */,
 				233AEFE629D774C30034ABA0 /* SplashViewController.swift in Sources */,
 				233E634529D9DB0A00F310B3 /* ConsultationViewController.swift in Sources */,
