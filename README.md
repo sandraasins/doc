@@ -8,7 +8,6 @@ Simple remake of my doctor's office website into app. I wanted to create an app 
 - [ ] Firebase
 
 *Work in progress
-
 ## To do:
 - [ ] Finish setup of design 
 - [ ] Connect splah/login screen 
