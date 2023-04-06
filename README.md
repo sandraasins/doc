@@ -11,9 +11,9 @@ Learning objectives:
 
 Front page                 |  Book Apointment
 :-------------------------:|:-------------------------:
-![]<img width="378" alt="Skjermbilde 2023-04-06 kl  22 43 42" src="https://user-images.githubusercontent.com/89581352/230492761-c9f2b6df-c40a-4536-81c4-436fcbf74155.png">  |  ![]<img width="375" alt="Skjermbilde 2023-04-06 kl  22 48 50" src="https://user-images.githubusercontent.com/89581352/230492730-24679bd4-abe1-4856-b5d6-b93e38a521c1.png">
+<img width="378" alt="Skjermbilde 2023-04-06 kl  22 43 42" src="https://user-images.githubusercontent.com/89581352/230492761-c9f2b6df-c40a-4536-81c4-436fcbf74155.png">  |  <img width="375" alt="Skjermbilde 2023-04-06 kl  22 48 50" src="https://user-images.githubusercontent.com/89581352/230492730-24679bd4-abe1-4856-b5d6-b93e38a521c1.png">
 
 
 Book standard consultation |  Book E-Consultation
 :-------------------------:|:-------------------------:
-![]<img width="372" alt="Skjermbilde 2023-04-06 kl  23 00 33" src="https://user-images.githubusercontent.com/89581352/230493758-bfcc5ecc-0bf2-4ce9-bd22-2b1cdd3a335b.png">. | 
+<img width="372" alt="Skjermbilde 2023-04-06 kl  23 00 33" src="https://user-images.githubusercontent.com/89581352/230493758-bfcc5ecc-0bf2-4ce9-bd22-2b1cdd3a335b.png">. | 
