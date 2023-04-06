@@ -7,8 +7,9 @@ Simple remake of my doctor's office website into app. I wanted to create an app 
 - [ ] Storyboard
 - [ ] Firebase
 
-*Work in progress
+
 ## To do:
+*Work in progress
 - [ ] Finish setup of design 
 - [ ] Connect splah/login screen 
 - [ ] Setup/configure Firebase
