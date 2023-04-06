@@ -46,7 +46,6 @@
                     </view>
                     <connections>
                         <outlet property="logInButton" destination="kqf-Yb-2dy" id="hJU-gq-efN"/>
-                        <segue destination="CM5-bQ-xc8" kind="push" identifier="PrimaryView" id="zpZ-0g-9BK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -318,7 +317,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tdB-GG-DT9">
-                                <rect key="frame" x="25" y="91" width="340" height="327.66666666666663"/>
+                                <rect key="frame" x="25" y="91" width="340" height="327.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Kontakt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA7-tt-rVe">
                                         <rect key="frame" x="0.0" y="0.0" width="109.33333333333333" height="37"/>
@@ -455,40 +454,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timebestilling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xa-Ix-GrD">
-                                <rect key="frame" x="25" y="90.333333333333329" width="198" height="37"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="uid-4D-HDP">
+                                <rect key="frame" x="25" y="103" width="170" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5f-By-3Cn">
+                                        <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konsultasjon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xa-Ix-GrD">
+                                        <rect key="frame" x="0.0" y="20.333333333333325" width="170" height="34.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-Sc-ykG">
-                                <rect key="frame" x="25" y="143.33333333333334" width="340" height="101.66666666666666"/>
+                                <rect key="frame" x="25" y="166" width="340" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="b4D-NS-ACE"/>
+                                </constraints>
                                 <string key="text">Velg ønsket dato og tidspunkt for konsultasjon med din lege. Ønsker du å bestille en dobbeltime må du ringe inn til legekontoret. Avbestilling av timen må skje senest 24 timer i forveien. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMj-11-cuL" customClass="CalendarView">
+                                <rect key="frame" x="25" y="300" width="340" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="CVI-H4-sHH"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gi5-Vf-sGV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="leading" secondItem="gi5-Vf-sGV" secondAttribute="leading" constant="25" id="4ti-0j-9sY"/>
-                            <constraint firstItem="gi5-Vf-sGV" firstAttribute="bottom" secondItem="pOU-Sc-ykG" secondAttribute="bottom" constant="516" id="Aoq-Sh-xtD"/>
-                            <constraint firstItem="5Xa-Ix-GrD" firstAttribute="leading" secondItem="gi5-Vf-sGV" secondAttribute="leading" constant="25" id="HWt-xT-ZDH"/>
-                            <constraint firstItem="gi5-Vf-sGV" firstAttribute="trailing" secondItem="pOU-Sc-ykG" secondAttribute="trailing" constant="25" id="ZdZ-Hx-Bgf"/>
-                            <constraint firstItem="5Xa-Ix-GrD" firstAttribute="leading" secondItem="gi5-Vf-sGV" secondAttribute="leading" constant="25" id="gUR-Gp-7at"/>
-                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="top" secondItem="5Xa-Ix-GrD" secondAttribute="bottom" constant="16" id="l0b-Fw-Wbi"/>
-                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="leading" secondItem="gi5-Vf-sGV" secondAttribute="leading" constant="25" id="m09-bP-M50"/>
-                            <constraint firstItem="gi5-Vf-sGV" firstAttribute="trailing" secondItem="5Xa-Ix-GrD" secondAttribute="trailing" constant="167" id="qod-W4-FE9"/>
-                            <constraint firstItem="gi5-Vf-sGV" firstAttribute="trailing" secondItem="pOU-Sc-ykG" secondAttribute="trailing" constant="25" id="z1U-2h-fCA"/>
-                            <constraint firstItem="gi5-Vf-sGV" firstAttribute="trailing" secondItem="5Xa-Ix-GrD" secondAttribute="trailing" constant="167" id="z5X-Et-HNU"/>
+                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="leading" secondItem="uid-4D-HDP" secondAttribute="leading" id="3MU-c5-tM0"/>
+                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="centerX" secondItem="d6z-KR-Kx6" secondAttribute="centerX" id="4aX-Vl-9cx"/>
+                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="leading" secondItem="uMj-11-cuL" secondAttribute="leading" id="746-pk-r15"/>
+                            <constraint firstItem="gi5-Vf-sGV" firstAttribute="trailing" secondItem="uid-4D-HDP" secondAttribute="trailing" constant="195" id="CHo-3x-Dfp"/>
+                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="trailing" secondItem="uMj-11-cuL" secondAttribute="trailing" id="Lpe-47-xLz"/>
+                            <constraint firstItem="pOU-Sc-ykG" firstAttribute="top" secondItem="uid-4D-HDP" secondAttribute="bottom" constant="8" id="YNv-DA-tyt"/>
+                            <constraint firstItem="uMj-11-cuL" firstAttribute="top" secondItem="pOU-Sc-ykG" secondAttribute="bottom" constant="20" id="atv-E1-esZ"/>
+                            <constraint firstItem="uid-4D-HDP" firstAttribute="leading" secondItem="gi5-Vf-sGV" secondAttribute="leading" constant="25" id="c2x-mT-3T9"/>
+                            <constraint firstItem="uid-4D-HDP" firstAttribute="top" secondItem="gi5-Vf-sGV" secondAttribute="top" constant="12" id="fwD-mG-ENB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6UC-q2-R2R"/>
+                    <connections>
+                        <outlet property="consultationCalendarView" destination="uMj-11-cuL" id="gqo-Xk-G4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPO-zE-Jkq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="277" y="1359"/>
+            <point key="canvasLocation" x="276.92307692307691" y="1358.5308056872038"/>
         </scene>
         <!--BookE Consultation View Controller-->
         <scene sceneID="Q6R-UH-AXr">
@@ -498,34 +519,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bya-Kp-dGs">
-                                <rect key="frame" x="25" y="136" width="340" height="101.66666666666669"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="C0J-dq-m47">
+                                <rect key="frame" x="25" y="103" width="199.66666666666666" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bestill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqU-lE-37N">
+                                        <rect key="frame" x="0.0" y="0.0" width="47.666666666666664" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Konsultasjon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWJ-4x-hwC">
+                                        <rect key="frame" x="0.0" y="20.333333333333325" width="199.66666666666666" height="34.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XL-te-bmH">
+                                <rect key="frame" x="25" y="166" width="340" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="Fbv-7a-yF1"/>
+                                    <constraint firstAttribute="height" constant="114" id="HTw-UN-6nD"/>
+                                </constraints>
                                 <string key="text">Velg ønsket dato og tidspunkt for konsultasjon med din lege. Ønsker du å bestille en dobbeltime må du ringe inn til legekontoret. Avbestilling av timen må skje senest 24 timer i forveien. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Konsultasjon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWi-aW-ter">
-                                <rect key="frame" x="25" y="91" width="214" height="37"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-5x-OqK" customClass="CalendarView">
+                                <rect key="frame" x="25" y="300" width="340" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="O8T-eu-2IF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j5l-Mg-by1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bya-Kp-dGs" firstAttribute="leading" secondItem="j5l-Mg-by1" secondAttribute="leading" constant="25" id="5ms-bC-YlS"/>
-                            <constraint firstItem="j5l-Mg-by1" firstAttribute="trailing" secondItem="bya-Kp-dGs" secondAttribute="trailing" constant="25" id="8vQ-zo-vEo"/>
-                            <constraint firstItem="j5l-Mg-by1" firstAttribute="trailing" secondItem="bWi-aW-ter" secondAttribute="trailing" constant="151" id="CMv-bn-TYB"/>
-                            <constraint firstItem="bya-Kp-dGs" firstAttribute="leading" secondItem="j5l-Mg-by1" secondAttribute="leading" constant="25" id="DRf-NG-iER"/>
-                            <constraint firstItem="j5l-Mg-by1" firstAttribute="bottom" secondItem="bya-Kp-dGs" secondAttribute="bottom" constant="523.33000000000004" id="Dw7-yY-IBf"/>
-                            <constraint firstItem="j5l-Mg-by1" firstAttribute="trailing" secondItem="bya-Kp-dGs" secondAttribute="trailing" constant="25" id="NT0-As-5M6"/>
-                            <constraint firstItem="bWi-aW-ter" firstAttribute="leading" secondItem="j5l-Mg-by1" secondAttribute="leading" constant="25" id="eKi-LE-gBZ"/>
-                            <constraint firstItem="bWi-aW-ter" firstAttribute="top" secondItem="j5l-Mg-by1" secondAttribute="top" id="y0l-Zl-Fbz"/>
+                            <constraint firstItem="EC9-5x-OqK" firstAttribute="top" secondItem="8XL-te-bmH" secondAttribute="bottom" constant="20" id="8x6-1z-AE0"/>
+                            <constraint firstItem="8XL-te-bmH" firstAttribute="leading" secondItem="EC9-5x-OqK" secondAttribute="leading" id="Cow-6D-Li3"/>
+                            <constraint firstItem="8XL-te-bmH" firstAttribute="top" secondItem="C0J-dq-m47" secondAttribute="bottom" constant="8" id="NIl-zj-VVf"/>
+                            <constraint firstAttribute="trailing" secondItem="8XL-te-bmH" secondAttribute="trailing" constant="25" id="OCQ-Ge-r0K"/>
+                            <constraint firstItem="EC9-5x-OqK" firstAttribute="top" secondItem="8XL-te-bmH" secondAttribute="bottom" constant="20" id="Xnh-WH-PxT"/>
+                            <constraint firstItem="8XL-te-bmH" firstAttribute="trailing" secondItem="EC9-5x-OqK" secondAttribute="trailing" id="bgB-ES-q0S"/>
+                            <constraint firstItem="8XL-te-bmH" firstAttribute="leading" secondItem="j5l-Mg-by1" secondAttribute="leading" constant="25" id="h04-Ru-wNF"/>
+                            <constraint firstItem="C0J-dq-m47" firstAttribute="top" secondItem="j5l-Mg-by1" secondAttribute="top" constant="12" id="hm1-Am-4hh"/>
+                            <constraint firstItem="8XL-te-bmH" firstAttribute="leading" secondItem="C0J-dq-m47" secondAttribute="leading" id="hqv-dK-HuN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="T1F-fX-91d"/>
+                    <connections>
+                        <outlet property="eConsultationCalendarView" destination="EC9-5x-OqK" id="Q9P-mF-qiP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VmT-5Y-MxN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -579,7 +625,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="58Q-kU-Lmd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.33407270909999998" green="0.22674342989999999" blue="0.95299452539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
@@ -854,7 +899,7 @@
         <scene sceneID="NLe-rI-Zdl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vMD-l6-ca1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bestill time" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="6Rk-rK-GpB"/>
+                    <tabBarItem key="tabBarItem" title="Bestill time" image="clock" catalog="system" selectedImage="clock.fill" id="6Rk-rK-GpB"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="nKv-Su-mfz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gx6-o4-FRv">
@@ -893,7 +938,7 @@
         <scene sceneID="E8C-uO-XR2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="twO-m8-rBL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Min side" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="Y1T-EN-rj4"/>
+                    <tabBarItem key="tabBarItem" title="Min side" image="person" catalog="system" selectedImage="person.fill" id="Y1T-EN-rj4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tg1-23-XAW">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -994,21 +1039,20 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xLG-fb-vR9"/>
-        <segue reference="WSe-0E-gUz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Splash" width="1024" height="1024"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="calendar.badge.clock" catalog="system" width="128" height="108"/>
+        <image name="clock" catalog="system" width="128" height="123"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
         <image name="doctor" width="256" height="144"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="pablita-924" width="256" height="262"/>
         <image name="pablita-doctor-in-a-phone-with-pills (1)" width="256" height="144"/>
-        <image name="person.circle" catalog="system" width="128" height="123"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="plus.circle" catalog="system" width="128" height="123"/>
-        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
