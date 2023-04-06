@@ -4,10 +4,12 @@ Simple remake of my doctor's office website into app. I wanted to create an app 
 
 *Work in progress
 
+
 ## Learning objectives:
 - [ ] UIKit
 - [ ] Storyboard
 - [ ] Firebase
+
 
 
 ## To do:
@@ -15,6 +17,8 @@ Simple remake of my doctor's office website into app. I wanted to create an app 
 - [ ] Connect splah/login screen 
 - [ ] Setup/configure Firebase
 - [ ] Create / Read / Update / Delete from Firebase 
+
+
 
 
 Front page                 |  Book Apointment
