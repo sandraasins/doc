@@ -24,6 +24,6 @@ Book standard consultation |  Book E-Consultation
 Renew perscription         |  Profile page
 :-------------------------:|:-------------------------:
 <img width="368" alt="Skjermbilde 2023-04-06 kl  23 11 02" src="https://user-images.githubusercontent.com/89581352/230495239-78a30d58-7935-4580-81dd-8baff35e063b.png">  |  <img width="375" alt="Skjermbilde 2023-04-06 kl  23 06 30" src="https://user-images.githubusercontent.com/89581352/230494428-7cbb1413-baec-4abd-b0fd-a84260f0f36b.png"> 
- *work in progress         |  
+ *work in progress         |   *work in progress  
 
  
