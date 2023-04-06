@@ -17,6 +17,8 @@ Simple remake of my doctor's office website into app. I wanted to create an app 
 - [ ] Connect splah/login screen 
 - [ ] Setup/configure Firebase
 - [ ] Create / Read / Update / Delete from Firebase 
+-- [ ] List patient name in frontpage & profile page
+-- [ ] Save selected appointment date and litst under
 
 
 
