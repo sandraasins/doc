@@ -18,6 +18,7 @@ Book standard consultation |  Book E-Consultation
 :-------------------------:|:-------------------------:
 <img width="372" alt="Skjermbilde 2023-04-06 kl  23 00 33" src="https://user-images.githubusercontent.com/89581352/230493758-bfcc5ecc-0bf2-4ce9-bd22-2b1cdd3a335b.png"> *not done  | 
 
-Profile page.              |  Book E-Consultation
+Renew perscription         |  Profile page
 :-------------------------:|:-------------------------:
-<img width="375" alt="Skjermbilde 2023-04-06 kl  23 06 30" src="https://user-images.githubusercontent.com/89581352/230494428-7cbb1413-baec-4abd-b0fd-a84260f0f36b.png"> *not done  |
+<img width="368" alt="Skjermbilde 2023-04-06 kl  23 11 02" src="https://user-images.githubusercontent.com/89581352/230495239-78a30d58-7935-4580-81dd-8baff35e063b.png">
+  |  <img width="375" alt="Skjermbilde 2023-04-06 kl  23 06 30" src="https://user-images.githubusercontent.com/89581352/230494428-7cbb1413-baec-4abd-b0fd-a84260f0f36b.png"> *not done 
