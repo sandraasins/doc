@@ -17,7 +17,9 @@ class BookAppointmentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.title = "Bestill time"
+        navigationItem.backButtonTitle = ""
         
         consultationButton.layer.cornerRadius = 12
         eConsultationButton.layer.cornerRadius = 12

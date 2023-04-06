@@ -9,18 +9,18 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-
-    @IBOutlet weak var messagesButton: UIButton!
-    @IBOutlet weak var prescriptionsButton: UIButton!
-    @IBOutlet weak var appointmentsButton: UIButton!
+    @IBOutlet weak var logOutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        //navigationItem.title = "Min side"
-        messagesButton.layer.cornerRadius = 12
-        prescriptionsButton.layer.cornerRadius = 12
-        appointmentsButton.layer.cornerRadius = 12
+        configureProfileButtons()
+        navigationItem.title = "Min side"
+      
     }
-
+    
+    func configureProfileButtons(){
+        logOutButton.layer.cornerRadius = 12
+       
+    }
 }
